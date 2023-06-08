@@ -1,0 +1,32 @@
+{
+  "name": "cli-kit",
+  "version": "1.0.0",
+  "description": "A cli utility toolkit",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  },
+  "keywords": [
+    "cli",
+    "command",
+    "line",
+    "interface",
+    "tool",
+    "utility",
+    "tools"
+  ],
+  "author": "Damien Bullis",
+  "license": "MIT",
+  "devDependencies": {
+    "bun-types": "^0.6.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
