@@ -6,11 +6,11 @@
   "module": "src/index.ts",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "bun test --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+"
+    "url": "https://github.com/damienbullis/cli-kit"
   },
   "keywords": [
     "cli",
@@ -22,7 +22,6 @@
     "tools"
   ],
   "author": "Damien Bullis",
-  "license": "MIT",
   "devDependencies": {
     "bun-types": "^0.6.0"
   },
