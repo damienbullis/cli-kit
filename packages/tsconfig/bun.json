@@ -1,0 +1,31 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "Default",
+    "compilerOptions": {
+        // add Bun type definitions
+        "types": ["bun-types"],
+
+        // enable latest features
+        "lib": ["ESNext"],
+        "module": "esnext",
+        "target": "esnext",
+
+        // if TS 5.x+
+        "moduleResolution": "bundler",
+        "noEmit": true,
+        // "allowImportingTsExtensions": true,
+        "moduleDetection": "force",
+
+        "allowJs": true, // allow importing `.js` from `.ts`
+
+        // best practices
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noUncheckedIndexedAccess": true,
+        "skipLibCheck": true,
+        // "composite": true,
+        "downlevelIteration": true,
+        "allowSyntheticDefaultImports": true
+    },
+    "exclude": ["node_modules"]
+}

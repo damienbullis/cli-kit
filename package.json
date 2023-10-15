@@ -1,21 +1,21 @@
 {
-  "private": true,
-  "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
-  },
-  "devDependencies": {
-    "eslint": "^8.48.0",
-    "prettier": "^3.0.3",
-    "tsconfig": "*",
-    "turbo": "latest"
-  },
-  "name": "cli-kit",
-  "packageManager": "bun@1.0.4",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+    "private": true,
+    "scripts": {
+        "test": "turbo run test",
+        "build": "turbo run build",
+        "dev": "turbo run dev",
+        "lint": "turbo run lint",
+        "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    },
+    "devDependencies": {
+        "eslint": "^8.48.0",
+        "prettier": "^3.0.3",
+        "tsconfig": "*",
+        "turbo": "latest"
+    },
+    "name": "cli-tools-mono",
+    "packageManager": "bun@1.0.6",
+    "workspaces": [
+        "packages/*"
+    ]
 }

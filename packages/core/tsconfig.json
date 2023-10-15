@@ -1,0 +1,6 @@
+{
+    // We extend it from here!
+    "extends": "tsconfig/bun.json",
+    // You can specify your own include/exclude here
+    "include": ["src"]
+}
