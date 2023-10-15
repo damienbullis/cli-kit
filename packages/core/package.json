@@ -1,5 +1,5 @@
 {
-    "name": "cli-tools",
+    "name": "clikit",
     "version": "0.0.0",
     "description": "A cli toolkit",
     "main": "./dist/index.js",
