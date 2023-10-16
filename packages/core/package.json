@@ -1,5 +1,5 @@
 {
-    "name": "clikit",
+    "name": "@damienbullis/cli-kit",
     "version": "0.0.0",
     "description": "A cli toolkit",
     "main": "./dist/index.js",
@@ -11,16 +11,18 @@
     "files": [
         "dist"
     ],
+    "private": false,
     "scripts": {
         "test": "bun test --coverage",
         "lint": "tsc && eslint .",
-        "build": "bun build src/index.ts --outdir ./dist --target node --format esm --minify",
+        "build": "bun build src/index.ts --outdir ./dist --target node --format esm --dts --env.NODE_ENV production",
         "dev": "tsup src/index.ts --format esm,cjs --watch --dts --env.NODE_ENV development",
-        "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+        "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+        "publish": "bun run npm publish --access public"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/damienbullis/cli-tools"
+        "url": "git+https://github.com/damienbullis/cli-kit.git"
     },
     "keywords": [
         "cli",
